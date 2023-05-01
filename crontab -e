@@ -1,0 +1,8 @@
+# MM HH DOM mm DOW commands
+# If you want to run a script every night at 8:30, & every month form monday to friday, then do 30 20 * * 1-5 Command
+# let run it every minute & save in /var/log/monit_httpd.log to track what is going on with our service
+
+# To set this automation up, you copy the path to you sriot file, type $crontab -e to get in the crontab -e file where you set up the below command
+
+
+* * * * * /opt/scripts/11_monit.sh & >> /var/log/monit_httpd.log
