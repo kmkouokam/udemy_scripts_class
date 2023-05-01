@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# -v LOOPBACK means ignore the line with the word LOOPBACK &  -ic mtu means count the number of active interface working & case sensitive 
 
 
 value=$(ip addr show | grep -v LOOPBACK | grep -ic mtu)
