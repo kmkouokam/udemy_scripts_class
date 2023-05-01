@@ -6,3 +6,10 @@
 
 
 * * * * * /opt/scripts/11_monit.sh & >> /var/log/monit_httpd.log
+
+
+
+
+# to see the content stop & start your httpd service ls /var/log/monit_httpd.log
+# or cat /var/log/monit_httpd.log
+# tail -f /var/log/monit_httpd.log
